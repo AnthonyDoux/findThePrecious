@@ -1,0 +1,446 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  background-image: url(light.png);
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+@font-face {
+      font-family: 'Aniron';
+      src: url('anirm___.ttf');
+}
+
+@font-face {
+      font-family: 'Nancy';
+      src: url('partybusiness.ttf');
+}
+
+@font-face {
+      font-family: 'tengar';
+      src: url('tngani.ttf');
+}
+
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  height: 100px;
+  width: 100%;
+  margin-top: 0;
+  z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.navbar .navbar-inverse .navbar-static-top{
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-toggle {
+  margin-top: 35px;
+  
+}
+
+.navbar-inverse {
+  background-color: #ff5f01;
+  border-color: #ff5f01;
+  height: 100px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+  /*border-right: 1px solid white;*/
+  width: 200px;
+}
+
+.link {
+  height: 50px;
+  text-align: center;
+}
+
+.links {
+  margin-top: 25px;
+  border-right: 1px solid white;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  float: right;
+  font-size: 20px;
+  font-family: 'Aniron';
+}
+
+.navbar-brand {
+  width: 200px;
+  height: 50px;
+  font-family: 'Aniron';
+  font-size: 30px;
+  margin-top: 25px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 850px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  height: 490px;
+  font-family: 'Nancy';
+  z-index: 10;
+}
+
+.carouselText {
+  font-size: 70px;
+}
+
+.carouselText2 {
+  font-size: 30px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 850px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 850px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.container {
+  text-align: center;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.marketTitle {
+  width: 1170px;
+}
+
+.mTitle {
+  font-family: 'Aniron';
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.ij {
+  font-family: 'tengar';
+  color: orange;
+  font-size: 20px;
+}
+
+.portraitBox {
+  width: 1200px;
+  margin-bottom: 30px;
+}
+
+.mLinks {
+  color: grey;
+  font-size: 20px;
+  font-family: 'Aniron';
+}
+
+a:hover {
+  color: #ff5f01;
+}
+
+.box1 {
+  margin-top: 30px;
+  height: 373px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+/*
+Media queries here .box
+*/
+.box {
+  height: 373px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait {
+  height: 372px;
+  width: 300px;
+  margin-right: 0;
+  padding: 0;   
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portraitGimli {
+  z-index: 10;
+  height: 372px;
+  width: 300px;
+  margin-right: 0;
+  padding: 0;
+  opacity: .7;   
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gandalfPic{
+  height: 372px;
+  width: 300px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+}
+
+.gimliPic{
+  height: 372px;
+  width: 300px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+}
+
+.boxReward {
+  position: absolute;
+  z-index: 10000;
+  width: 300px;
+  height: 272px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Nancy';
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 5em;
+  margin: 0;margin-top: 50px;
+  z-index: 10000;
+  color: white;
+}
+
+
+.reward {
+  font-family: 'Nancy';
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  font-size: 2em;
+  color: black;
+  z-index: 10000;
+}
+
+.coins {
+   color: #ff5f01;
+}
+
+.titleDead {
+  text-decoration: line-through #ff5f01;
+  font-family: 'Nancy';
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 5em;
+  margin: 0;margin-top: 50px;
+  z-index: 10000;
+  color: white;
+}
+
+.dead {
+  font-family: 'Nancy';
+  color: #ff5f01;
+  font-size: 40px; 
+}
+
+.dudeInfo {
+  font-family: 'Nancy';
+  width: 300px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  margin-left: 35px;
+}
+
+a:hover .portrait{
+  opacity:1;
+  align-items: flex-end;
+}
+
+a:hover .portraitGimli{
+  opacity:1;
+  align-items: flex-end;
+}
+
+a:hover .title{
+  margin-top: 0px;
+  opacity: 1;
+  font-size: 2.7em;
+}
+
+a:hover .titleDead{
+  margin-top: 0px;
+  opacity: 1;
+  font-size: 2.7em;
+}
+
+a:hover .reward{
+  opacity: 0;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+.marketing .col-lg-4 {
+  padding: 0;
+}
+
+  .marketing {
+    margin-left: 35px;
+  }
+
+  .portraitBox {
+    width: 300px;
+  }
+
+  .dudeInfo {
+    margin: 0px;
+  }
+
+  .marketTitle {
+    display: none;
+  }
+
+  .carousel {
+  height: 300px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  display: none;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+}
+.carousel-inner > .item > img {
+  height: 300px;
+}
+  /*pour le carousel et ficaption en responsive*/
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    /*font-size: 21px;*/
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
